@@ -1,0 +1,14 @@
+# Local config & runtime state (never commit personal data)
+config.json
+agy_settings.json
+state.json
+state.json.tmp
+
+# Media staging directories
+_inbox/
+_outbox/
+
+# Python & macOS artifacts
+__pycache__/
+*.pyc
+.DS_Store

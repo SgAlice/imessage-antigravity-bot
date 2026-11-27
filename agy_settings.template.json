@@ -1,0 +1,32 @@
+{
+  "agentMode": "accept-edits",
+  "toolPermission": "request-review",
+  "allowNonWorkspaceAccess": false,
+  "enableTerminalSandbox": true,
+  "disableSlashCommands": true,
+  "permissions": {
+    "allow": [
+      "read_file(__WORKDIR__)",
+      "write_file(__WORKDIR__)",
+      "command(./svg2png.py)",
+      "command(./fetch_url.py)",
+      "read_url(*)"
+    ],
+    "deny": [
+      "write_file(__WORKDIR__/bridge.py)",
+      "write_file(__WORKDIR__/config.json)",
+      "write_file(__WORKDIR__/config.example.json)",
+      "write_file(__WORKDIR__/agy_settings.json)",
+      "write_file(__WORKDIR__/agy_settings.template.json)",
+      "write_file(__WORKDIR__/start.sh)",
+      "write_file(__WORKDIR__/svg2png.py)",
+      "write_file(__WORKDIR__/fetch_url.py)",
+      "write_file(__WORKDIR__/GEMINI.md)",
+      "write_file(__WORKDIR__/README.md)",
+      "write_file(__WORKDIR__/state.json)",
+      "mcp(*)",
+      "execute_url(*)",
+      "download_url(*)"
+    ]
+  }
+}
